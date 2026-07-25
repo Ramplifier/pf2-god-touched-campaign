@@ -68,7 +68,10 @@
           "builder": "@angular/build:unit-test"
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://ramplifier.github.io/pf2-god-touched-campaign/"
+          }
         }
       }
     }
