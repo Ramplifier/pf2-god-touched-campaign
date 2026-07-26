@@ -1,0 +1,297 @@
+[
+  {
+    "name": "Ambrosia",
+    "cost": 0,
+    "actions": "free",
+    "description": "You gain a little flask that automatically fills back up when empty. For a certain amount of times (based on your channel points) you can activate its power to give the next consumer of the flask a +3 status bonus on their next skill check."
+  },
+  {
+    "name": "Backtrack",
+    "actions": "reaction",
+    "cost": -1,
+    "requirements": [
+      "You have been the target of an attack or spell that you could see and taken damage from it"
+    ],
+    "description": "Heal for the same amount of damage done on the last instance of the spell that targeted you."
+  },
+  {
+    "name": "Blind Sight",
+    "cost": 2,
+    "actions": "2",
+    "size": {
+      "amount": 15,
+      "shape": "cone"
+    },
+    "result": {
+      "criticalSuccess": {
+        "effect": "The spell has no effect on you"
+      },
+      "success": {
+        "effect": "All creatures are concealed to you until the end of your next turn",
+        "info": "Concealed -> must succeed a DC 5 flat check when targeting with an attack, spell, or other effect"
+      },
+      "fail": {
+        "effect": "All creatures are hidden to you until the start of you next turn"
+      },
+      "criticalFail": {
+        "effect": "Fail + you are stunned 1",
+        "info": "Stunned 1 -> you lose that many actions on your next turn"
+      }
+    },
+    "description": "Let out a spray of darkness. Any creature hit by this spray will need to make a reflex save."
+  },
+  {
+    "name": "Blood Bite",
+    "actions": "free",
+    "cost": 0,
+    "requirements": [
+      "You succeeded an attack roll with a bite attack"
+    ],
+    "description": "You gain a bite attack if you don't have one.\n\n If you hit the target with a bite attack you may activate the channel point to regain as much hp as you will roll. (Activation must be declared before rolling damage) "
+  },
+  {
+    "name": "Blood Rush",
+    "cost": 0,
+    "actions": "free",
+    "description": "You thrive in combat and seeing your own blood drip from your body excites you to no end. Gain a +2 status bonus on your next attack roll. If the attack hits you can add 1 damage per 10 hp lost. (the channel point is still spend if the attack misses)"
+  },
+  {
+    "name": "Burning Star",
+    "cost": 2,
+    "actions": "2",
+    "duration": {
+      "amount": 1,
+      "unit": "minute"
+    },
+    "range": 50,
+    "radius": 10,
+    "description": "You create sphere that will burn everyone who stands inside it at the end of your turn, dealing 5 + 1d4 fire damage."
+  },
+  {
+    "name": "Coin Flip",
+    "cost": -1,
+    "actions": "reaction",
+    "requirements": [
+      "A creature within 30 feet is targeting you with an attack or spell that you can see"
+    ],
+    "description": "When an attack is make on you, you can spend 1 gold coin and flip it. If it lands on heads (1) you take the damage. If it's tails (2) the attack misses."
+  },
+  {
+    "name": "Dead Grip",
+    "cost": 2,
+    "actions": "2",
+    "duration": {
+      "amount": 1,
+      "unit": "minute"
+    },
+    "range": 50,
+    "radius": 15,
+    "description": "You create a field of decay that will immobilize any creatures who stand in it or end their moment action in it."
+  },
+  {
+    "name": "Deja Vu",
+    "cost": -1,
+    "actions": "reaction",
+    "requirements": [
+      "The target has completed an action",
+      "The target has enough resources to repeat its previous action"
+    ],
+    "description": "You force a target to spend its next action repeating its previous action during its current turn. The target is free to decide on how act out the action."
+  },
+  {
+    "name": "Elemental Armour",
+    "cost": 1,
+    "actions": "1",
+    "duration": {
+      "amount": 1,
+      "unit": "minute"
+    },
+    "description": "When you take this option you have to choose 1 specific type of elemental damage. \n\nYou wrap yourself into an armour of <specified element>. When you are hit by this type of elemental damage you roll your defence die and reduce the damage by the rolled value. Lower the size of your defence die by one step (1d6 > 1d4).  The armour will dissipate if the defence dice is reduced to anything lower than 1d4. \n\nDefence die starting value: 1d6"
+  },
+  {
+    "name": "Elemental Wall",
+    "cost": 2,
+    "actions": "2",
+    "range": 30,
+    "duration": {
+      "amount": 1,
+      "unit": "minute"
+    },
+    "result": {
+      "success": {
+        "effect": "Fail, but you take half the damage"
+      },
+      "fail": {
+        "effect": "Take 2d6 of <specified element> damage"
+      }
+    },
+    "description": "When you take this option you have to choose 1 specific type of elemental damage. \n\nYou raise a 10-feet wide (and 10-feet tall) wall of <specified element> damage. The wall can be placed in any orientation, but must remain a straight line. The wall can be sustained with a free action for up to 1 minute or until the caster becomes unconscious. Creatures who pass through the wall must succeed on a fortitude save. The caster can pas freely through the wall. "
+  },
+  {
+    "name": "Elemental Weapon",
+    "cost": 1,
+    "actions": "1",
+    "duration": {
+      "amount": 1,
+      "unit": "minute"
+    },
+    "description": "When you take this option you have to choose 1 specific type of elemental damage. \n\nYou enchant a weapon with <specified element>. When you hit an enemy with this enchanted weapon they take 1d8 elemental damage on top of the normal damage of the weapon. After the hit the enchantment will disappear."
+  },
+  {
+    "name": "Fake Out",
+    "cost": 1,
+    "actions": "1",
+    "description": "The next targeted attack or spell cast you spend actions on sends out a fake copy to a different target. Both targets need to succeed on a will save or are flat-footed (-2 to AC) until their next turn. This save will resolve before the initial attack roll/spell cast."
+  },
+  {
+    "name": "Geyser",
+    "cost": 2,
+    "actions": "2",
+    "range": 30,
+    "radius": 5,
+    "requirements": [
+      "The spell is cast from a solid surface"
+    ],
+    "result": {
+      "criticalSuccess": {
+        "effect": "You take half the damage and remain in your current spot"
+      },
+      "success": {
+        "effect": "You take half the damage"
+      },
+      "fail": {
+        "effect": "Take 2d6 of force damage and are re-positioned (Step) to the next free square in the direction the geyser erupted."
+      },
+      "criticalFail": {
+        "effect": "Fail + you are stunned 1",
+        "info": "Stunned 1 -> you lose that many actions on your next turn."
+      }
+    },
+    "description": "Water erupts in a 10-feet tall geyser that shoves anything in its way. Creatures caught in its path need to make a reflex save. If the creatures are slammed into another physical object (walls or other creatures) both will take 1d6 of damage."
+  },
+  {
+    "name": "Grasping Vines",
+    "cost": 2,
+    "actions": "2",
+    "range": 120,
+    "requirements": [
+      "The spell is cast from a solid surface"
+    ],
+    "result": {
+      "criticalSuccess": {
+        "effect": "The spell has no effect on you"
+      },
+      "success": {
+        "effect": "You are grabbed",
+        "info": "Grabbed -> flat-footed and immobilised. \nflat-footed -> -2 to AC \n immobilised -> make a DC 5 flat check when using a manipulate action"
+      },
+      "fail": {
+        "effect": "Take 1d6 of bludgeoning damage and become restrained",
+        "info": "restrained -> you are flat-footed, immobilised and can't take actions with the attack or manipulate trait except attempt to escape or force open"
+      },
+      "criticalFail": {
+        "effect": "1d6 of bludgeoning damage and are stunned 3",
+        "info": "Stunned 3 -> you lose that many actions on your next turn."
+      }
+    },
+    "description": "Strong tree roots spout form a solid surface and try to grab a creature in its grasp. The target needs to make a reflex saving throw."
+  },
+  {
+    "name": "Heroic Strike",
+    "cost": 1,
+    "actions": "1",
+    "result": {
+      "criticalSuccess": {
+        "effect": "Return 1 of your invested hero points"
+      },
+      "success": {
+        "effect": "Add 1d6 for every hero point spend"
+      },
+      "fail": {
+        "effect": "The hero invested points are returned to your sheet (but the channel point is spend)"
+      },
+      "criticalFail": {
+        "effect": "You lose the hero point and channel point"
+      }
+    },
+    "description": "Declare how many hero points you are spending on the next strike. If the strike hits the target you can add 1d6 per hero point spend. "
+  },
+  {
+    "name": "Last Breath (reaction)",
+    "cost": -1,
+    "actions": "reaction",
+    "requirement": [
+      "A creature is hit by a killing blow",
+      "You are within 50 feet of the creature"
+    ],
+    "description": "As a creature dies you call out to the gods and take control over the creature before it can hit the ground. You can take a 1-action action with it."
+  },
+  {
+    "name": "Last Breath (spell)",
+    "cost": 3,
+    "actions": "3",
+    "range": 50,
+    "requirement": [
+      "a creature has died in-between your last and current turn"
+    ],
+    "description": "You are able to take control over a creature. Within your turn you gain 2 actions to command this creature as if you were this creature. "
+  },
+  {
+    "name": "Life Link",
+    "cost": 1,
+    "actions": "1",
+    "range": 15,
+    "duration": {
+      "unit": "Start of casters next turn"
+    },
+    "description": "You connect your life force to another creature. Any damage you or the linked creature takes is also taken by the other."
+  },
+  {
+    "name": "Life Vest",
+    "cost": 1,
+    "actions": "1",
+    "duration": {
+      "amount": 1,
+      "unit": "minute"
+    },
+    "description": "You wrap yourself into an armour of water. When you are hit by bludgeoning damage you roll your defence die and reduce the damage by the rolled value. Lower the size of your defence die by one step (1d6 > 1d4).  The armour will dissipate if the defence dice is reduced to anything lower than 1d4. \n\nDefence die starting value: 1d8"
+  },
+  {
+    "name": "Moon Berries",
+    "cost": 9,
+    "actions": "during daily preparations",
+    "description": "During your daily preparations you can grow up to 3 berries that cure the consumer of 1 non-severe condition that effects them (dazed, stunned, dazzled, bleeding, frightened). \n\nYou are not able to be cured from sickness as you are not able to digest anything with this condition.\n"
+  },
+  {
+    "name": "Pomegranate",
+    "actions": "during daily preparations",
+    "cost": 9,
+    "description": "During your daily preparations you can grow any type of seed into a pomegranate up to 3 times. Consuming one of these will restore 3 + 1d4 hp or when thrown deal 1d6 of bludgeoning damage and 1 splash damage (piercing)."
+  },
+  {
+    "name": "Swap",
+    "range": 15,
+    "actions": "swap",
+    "cost": 2,
+    "description": "You trade places with another creature. If the target is unaware of it being targeted for the swap it will become stunned 1. (reduce the amount of actions gained on your turn)"
+  },
+  {
+    "name": "Tidal Wave",
+    "cost": 4,
+    "actions": "1-3 actions",
+    "radius": 5,
+    "description": "You summon a force of water from your position that moves in a straight line away from you 10, 15 or 20 feet based on the amount of used actions. You can also chose to move with the wave and mechanically works as multiple Step actions."
+  },
+  {
+    "name": "Time Crunch",
+    "cost": 2,
+    "actions": "2",
+    "range": 50,
+    "radius": 10,
+    "duration": {
+      "amount": 1,
+      "unit": "minute"
+    },
+    "description": "You create a small time distortion field. Any creatures caught in it will gain the slowed 1 condition. (slowed -> lose that many actions per turn until it expires)"
+  }
+]

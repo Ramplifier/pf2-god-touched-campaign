@@ -1,0 +1,102 @@
+<div class="row card mb-4 border-0 ">
+  <div class="card-header" style="background-color: #522e2c">
+    <h2 class="user-select-none float-start fw-bold " style="color: #cbc18f;">{{boon.name}}</h2>
+<!--    <h2 class="float-end"><app-cost-icon [cost]="boon.cost"></app-cost-icon></h2>-->
+  </div>
+  <div class="card-body" style="background-color: #b39d90" >
+    <p class=" m-0"><span class="fw-bold">Cost:</span> {{boon.actions}}</p>
+      <hr class="m-1">
+    @if (boon.range != undefined) {
+      <p class=" m-0"><span class="fw-bold">Range:</span> {{boon.range}}-feet</p>
+    }
+    @if (boon.radius != undefined) {
+      <p class=" m-0"><span class="fw-bold">Radius:</span> {{boon.radius}}-feet</p>
+    }
+    @if (boon.size != undefined) {
+      <p class=" m-0"><span class="fw-bold">Range:</span> {{boon.size.amount}}-feet {{boon.size.shape}} </p>
+    }
+    @if (boon.duration != undefined) {
+      <p class=" m-0"><span class="fw-bold">Duration:</span> {{boon.duration.amount}} {{boon.duration.unit}}</p>
+    }
+    @if (boon.requirements != undefined) {
+      <p class=" m-0"><span class="fw-bold">Requirements:</span></p>
+      <ul>
+      @for (reqs of boon.requirements; track reqs) {
+        <li>{{reqs}}</li>
+      }
+      </ul>
+    }
+    @if (Object.keys(boon).length >=5) {
+      <hr class="m-1">
+    }
+    <span [innerText]="boon.description"></span>
+    @if (boon.result != undefined){
+      <table class="mt-2 mb-3 bg-pf-table-bg mb-2">
+        <thead class="bg-secondary-subtle">
+        <tr>
+          <th scope="col" class="bg-pf-sub p-2">Result</th>
+          <th scope="col" class="bg-pf-sub p-2">Effect</th>
+          <th scope="col" class="bg-pf-sub p-2">info</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          @if (boon.result.criticalSuccess != undefined){
+          <td class="p-2">Critical Success</td>
+          <td class="p-2">
+
+              {{boon.result.criticalSuccess.effect}}
+
+          </td>
+            @if(boon.result.criticalSuccess.info != undefined){
+              <td class="p-2">{{boon.result.criticalSuccess.info}}</td>
+            }
+          }
+
+        </tr>
+        <tr>
+          @if (boon.result.success != undefined){
+            <td class="p-2">Success</td>
+            <td class="p-2">
+
+              {{boon.result.success.effect}}
+
+            </td>
+            @if(boon.result.success.info != undefined){
+              <td class="p-2">{{boon.result.success.info}}</td>
+            }
+          }
+        </tr>
+        <tr>
+          @if (boon.result.fail != undefined){
+            <td class="p-2">Fail</td>
+            <td class="p-2">
+
+              {{boon.result.fail.effect}}
+            </td>
+            @if(boon.result.fail.info != undefined){
+              <td class="p-2">{{boon.result.fail.info}}</td>
+            }
+
+          }
+        </tr>
+        <tr>
+          @if (boon.result.criticalFail != undefined){
+            <td class="p-2">Critical Fail</td>
+            <td class="p-2">
+
+              {{boon.result.criticalFail.effect}}
+
+            </td>
+            @if(boon.result.criticalFail.info != undefined){
+              <td class="p-2">{{boon.result.criticalFail.info}}</td>
+            }
+
+          }
+        </tr>
+
+        </tbody>
+      </table>
+    }
+  </div>
+</div>

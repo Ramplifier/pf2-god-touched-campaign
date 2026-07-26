@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+.bg-pf{
+  background-color: #522e2c;
+  font-family: "Century Gothic","sans-serif";
+  color:navajowhite;
+  font-weight: 700;
+}
+
+.bg-pf-subtle{
+  background-color: #573d3d;
+  color:navajowhite;
+  font-weight: bold;
+  font-family: "Century Gothic","sans-serif";
+}
+
+.bg-pf-sub {
+  background-color: #594a4a;
+color:navajowhite;
+  font-family: "Century Gothic","sans-serif";
+}
+
+.bg-pf-sub-sub {
+  background-color: #5c5454;
+  color:navajowhite;
+  font-family: "Century Gothic","sans-serif";
+}
+
+.bg-pf-card-bg{
+  background-color: #c5ad90;
+  font-family: "Century Gothic","sans-serif";
+}
+
+.bg-pf-table-bg{
+  background-color: #ccbeae;
+  font-family: "Century Gothic","sans-serif";
+}
+
+.nav-color{
+  background-color: #292929;
+}
+
+
+.nav-color-text{
+  color: #8c8c8c;
+}

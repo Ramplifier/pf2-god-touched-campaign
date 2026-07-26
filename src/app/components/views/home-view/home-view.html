@@ -1,0 +1,789 @@
+<div class="m-4">
+  <div class="card mb-3 border-0 bg-pf-card-bg">
+    <div class="card-header mb-2 bg-pf user-select-none" (click)="openCamp=!openCamp">
+      <h2 class="card-title">The campaign</h2>
+    </div>
+    @if (openCamp) {
+      <div class="card-body px-0 ">
+        <div id="intro-block" class="w-100">
+          <div class="card-header rounded-0 border-0 bg-pf-subtle">
+            <h3>Intro</h3>
+          </div>
+          <div class="card-text m-3">
+            You are a mortal who has been "god-touched" (you are free to decide on how long ago it started).
+            This means that the mad-gods, who ravaged the world 800 years ago, have reached out to you in the hopes that you will accept their offer of power in return for freeing them.
+            It also means that you will be hunted down by members of the Hunters Guild for a pretty penny.
+            You might find a place to stay under the radar for a while, but you'll have to sleep with one eye open.
+            The only ones who might be able to help you with this cruel fate are the members of the Crystal Order. You have heard stories of them protecting god-touched people. They might even have ways to free you completely, but is that even something you want? Accepting these powers could give you the ability to turn stone to gold, heal the sick in an instant, make people bend the knee to you. The possibilities are endless. The choice is yours. Would you reach out to the voice calling your name even if it meant losing your soul to a mad god?
+          </div>
+        </div>
+
+        <div id="quickpoints-block" class="w-100">
+          <div class="card-header rounded-0 border-0 bg-pf-subtle">
+            <h3>Quick points</h3>
+          </div>
+          <div class="card-text m-3">
+            <ul>
+              <li>Awaken the power of the mad gods (if you choose to accept it)</li>
+              <li>The campaign starts at level 2</li>
+              <li>Travel the land to search for powers of the mad gods</li>
+              <li>Gain allies or make enemies based on actions taken</li>
+              <li>Fight some monsters</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="logistics-block" class="w-100">
+          <div class="card-header rounded-0 border-0 bg-pf-subtle">
+            <h3>Logistics</h3>
+          </div>
+          <div class="card-text m-3">
+            <strong>Ruleset</strong>
+            <p class="">We'll be playing with the Pathfinder 2e (remastered) ruleset.</p>
+
+            <strong>Style of play</strong>
+            <p class="">
+              With the game I am for a pretty good mix between combat and roleplay.
+              In the beginning it will probably focus a bit more on combat as I figure out the best way to do things and get more familiar with the role of a GM.
+              As the story progresses I look forward to give more opportunities to interact with characters and show all kinds of different cultures and personalities that exist within the world.
+            </p>
+
+            <strong>Frequency</strong>
+            <p class="">
+              Starting out with monthly sessions is the best I think. This will give me enough time to figure out the world and what I need to prepare since the world is quite new and fluid.
+              Also I enjoy making maps that are tailored to the specific combat I have in mind (and I'm very stubborn in wanting to have calculated every possible action you might take. This might change as the campaign goes on)
+              If all people are open to coming together more often further in to the campaign we can re-evaluate what works best for people.
+            </p>
+
+            <strong>Frequency</strong>
+            <p class="">
+              This discord often has sessions that take about ~4 hours and that's what I'm aiming for as well. Depending on how quick the players level up I expect the campaign to last for around 2 years (if we do monthly sessions).
+            </p>
+          </div>
+        </div>
+
+        <div id="expectations-block" class="w-100">
+          <div class="card-header rounded-0 border-0 bg-pf-subtle">
+            <h3>Expectations from the players</h3>
+          </div>
+          <div class="card-text m-3">
+            <p>
+              Enjoy the game. Find something that makes you look forward to the next session and I'll try to provide.
+              If you didn't enjoy something tell me that as well.
+              I like experimenting with mechanics and not everything will be a success.
+              Same goes for everything else.
+            </p>
+          </div>
+        </div>
+
+        <div id="world-block" class="w-100">
+          <div class="card-header rounded-0 border-0 bg-pf-subtle mb-2">
+            <h3>The world</h3>
+          </div>
+          <div class="card-text m-3">
+            <p>
+              Over 4000 years the god know as The Artisan made Diamath (the name of this world).
+              Working tirelessly to make sure that the world was the best it could be.
+              Pouring more and more of his soul into every creation.
+              And for a long time it felt like all was good, but the fragment of his soul began to live a life of their own.
+              Mortals gained powers that were far beyond believe and would eventually become demi-gods themselves.
+              Getting a chance to join the celestial realm was an honour and to be celebrated.
+              Until their bodies couldn't handle the power and they turned.
+              They would go mad and attack other gods.
+              They would burn cities to the ground until there was nobody left alive.
+              Together with the help of a specialized group The Artisan defeated these mad gods.
+              Some mad gods had become too powerful and only could be sealed away in a prison in the celestial realm far away where they will not be able to harm anyone and rot til their powers had been doused.
+              <br><br>
+              The last mad god was sealed 800 years ago and civilizations started to rebuild themselves, but the mad gods were not done yet.
+              Celestial fragments started appearing all over the world and people received visions from the mad gods.
+              They would even awaken powers these gods once had.
+              Hoping followers would rise up and free them from their prison.
+              The Artisan would not let these mortals succumb to the same fate again.
+              He provided those brave enough with tools to protect themselves and dismantle any grip the mad gods might have got on mortals.
+              <br><br>
+              In current days a lot of people have risen up to help with the almost impossible task of freeing the world from these threats from the mad gods.
+              Groups of fragment hunters scour the land to look for any celestial fragments that put surrounding towns under their spell.
+              Cities are being kept safe by the Splinter guard. Capturing anyone who might have been god-touched.
+              The perspective on the best way to deal with lingering fragments can widely differ from one location to another, but no one wants to have a repeat of the events from a thousand years ago.
+            </p>
+          </div>
+        </div>
+
+        <div id="Campaign-block" class="w-100">
+          <div class="card-header rounded-0 border-0 bg-pf-subtle mb-2">
+            <h3>Campaign mechanics</h3>
+          </div>
+          <div class="card-text m-0 p-0">
+            <p class="m-3">
+              With this setting a couple of world specific mechanics are introduced to add something that is unique to this world/campaign.
+              Throughout the campaign things might be tweaked here and there for extra flavour or balancing.
+              These changes happen between sessions.
+              Never in sessions as these mechanics are worked in collaboration with the players.
+            </p>
+
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub m-0">
+              <h4>Boons</h4>
+            </div>
+            <p class="m-3">
+              If you do not decide to take the offer from the gods you will get another way of gaining extra power.
+              Let me know if you want to go that route so I can see how we will balance it out. (it will probably be in the form of extra archetypes/multiclassing)
+              <br><br>
+
+              God-touched people gain the ability to awaken boons from one of the mad gods.
+              On your character sheet it means that you get a special feat that adds a unique type of spellcasting.
+              When you accept the offer you can you pick a skill from a specific list of spells/actions.
+              As the campaign progresses you are able to upgrade that skill in different ways.
+              Make it bigger, make its duration longer, change it in other fun ways.
+              These upgrades are not bound by levels.
+              They will happen based on actions taken in the world and for the GM to hand out.
+              Each boon can be seen as having its own skill tree to make it more powerful.
+              <br><br>
+              Most of these boons will have a magical aspect to them, but you don't have to be a caster to use the spell given to you.
+              To use the chosen boon you spend a channeling point.
+              Flavour-wise it means that you are calling out to the god and ask it to use its power in some way, shape or form.
+              <br><br>
+              You don't have to keep the same single boon throughout the campaign.
+              When you gain a "skill point" you are free to distribute all points however you like.
+              I might need some time to add choices to boons if you choose a boon that has not been chosen before, but that's fine and can be done outside of the session.
+              (How the upgrading will work specifically we'll have to see during the campaign)
+            </p>
+
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub">
+              <h4>Channeling points</h4>
+            </div>
+            <p class="m-3">
+              Channeling points determine how often you can use your god-touched ability.
+              While not strictly tied to your level they will mostly increase when leveling up. (I think)
+              They can be seen as spell slots, but even martial classes have them and they replenish when you sleep for 6 hours.
+            </p>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+  <!---------------------------------------------------------------->
+  <div class="card mb-3 border-0 bg-pf-card-bg">
+    <div class="card-header mb-2 bg-pf user-select-none" (click)="openChar=!openChar">
+      <h2 class="card-title">Character creation</h2>
+    </div>
+    @if(openChar){
+      <div class="card-body px-0 ">
+        <div id="ancestry-block" class="w-100">
+          <div class="card-header rounded-0 border-0 bg-pf-subtle">
+            <h3>Ancestries</h3>
+          </div>
+          <div class="card-text m-3">
+            Since this world comes from the imagination of the GM there is a lot of room to work with if you have a certain thing in mind.
+            That does not mean that every ancestry will be possible.
+            You can check the table below for reference to see a list of predetermined rarities of certain ancestries.
+            Ancestries in the common and uncommon row can be taken without consulting the GM.
+            Rare races will have to be discussed before being accepted.
+            Those in the non-playable row cannot be taken without a very specific reason.
+            Adventurers may encounter them on their adventures.
+            <br><br>
+            If you wish to choose another ancestry that is not on this list consult the GM.
+
+            <table class="mb-3 bg-pf-table-bg mb-2">
+              <thead class="bg-secondary-subtle">
+              <tr>
+                <th scope="col" class="bg-pf-sub p-2">Rarity</th>
+                <th scope="col" class="bg-pf-sub p-2">Ancestries</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td class="p-2">Common</td>
+                <td class="p-2">
+                  Human, Orc, Halfling, Gnome, Goblin, Kobold
+                </td>
+              </tr>
+              <tr>
+                <td class="p-2">Uncommon</td>
+                <td class="p-2">
+                  Any animalistic ancestry (catfolk, shoonie, tengu, etc), Leshy, Conrasu
+                </td>
+              </tr>
+              <tr>
+                <td class="p-2">Rare</td>
+                <td class="p-2">
+                  Awakened animals, Centaurs, Dwarfs, Jotunborn, Tanuki
+                </td>
+              </tr>
+              <tr>
+                <td class="p-2">Non-playable</td>
+                <td class="p-2">
+                  Android, Automaton, Elves, Fleshwrap, Skeleton, Puppet, Sprite and probably any other ancestry that does not fit the list
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="heritages-block" class="w-100">
+          <div class="card-header rounded-0 border-0 bg-pf-subtle">
+            <h3>Heritages</h3>
+          </div>
+          <div class="card-text m-3">
+            I would say that say that 99% of the heritages are allowed.
+            This setting mostly will be played in an environment that resembles the geological structure of europe, so the more exotic heritages might come from ancestors that have moved to a bigger city and settled there or something along those lines.
+            We'll figure something out if needed.
+          </div>
+        </div>
+
+        <div id="backgrounds-block" class="w-100">
+          <div class="card-header rounded-0 border-0 bg-pf-subtle">
+            <h3>Backgrounds</h3>
+          </div>
+          <div class="card-text m-3">
+            This world is branched from a very standard fantasy world and most of the backgrounds to choose from will work for the setting.
+            Backgrounds that involve magic or technology can be taken, but this world has a very basic understanding of them.
+            If you aren't sure if the background fits the world feel free to check in with the GM.
+          </div>
+        </div>
+
+        <div id="class-block" class="w-100">
+          <div class="card-header rounded-0 border-0 bg-pf-subtle">
+            <h3>Classes</h3>
+          </div>
+          <div class="card-text m-3">
+            Players are free to choose any class they want to play, but there are some ways to source of power differs from standard the class definition.
+            Mechanically they don't change, but coming up with a history and lore is a bit much for classes that might not be played, so this can act as more of a simple explanation on how this class exists within the world.
+            Here is a quick list with the classes and where their powers might originate from.
+            <br>
+            <br>
+            <table class="mb-3 bg-pf-table-bg mb-2">
+              <thead class="bg-secondary-subtle">
+              <tr>
+                <th scope="col" class="bg-pf-sub p-2">Class</th>
+                <th scope="col" class="bg-pf-sub p-2">Source of Power</th>
+                <th scope="col" class=" col-2 bg-pf-sub p-2">Rarity</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td class="p-2">Animist</td>
+                <td class="p-2">
+                  You have a connection with the celestial realm and are able to interact with the celestial essences that are left by those of who have passed away.
+                </td>
+                <td class="p-2">rare</td>
+              </tr>
+              <tr>
+                <td class="p-2">Champion</td>
+                <td class="p-2">There are quite a few champions. It is not uncommon for the Artisan or a Jailer to bless those who have shown initiative to defend the world against the mad gods attempts.</td>
+                <td class="p-2">common</td>
+              </tr>
+              <tr>
+                <td class="p-2">Cleric</td>
+                <td class="p-2">There are quite a few champions. It is not uncommon for the Artisan or a Jailer to bless those who have shown initiative to defend the world against the mad gods attempts.</td>
+                <td class="p-2">common</td>
+              </tr>
+              <tr>
+                <td class="p-2">Examplar</td>
+                <td class="p-2">You have found a way to harnas the celestial power from a creation of the Artisan, extracted it from a celestial weapon, or found it in the wild and can now use it to move into objects to your advantage.</td>
+                <td class="p-2">uncommon</td>
+              </tr>
+              <tr>
+                <td class="p-2">Inventor</td>
+                <td class="p-2">Magic and technology are both very simplistic. There are only limited places where someone might be able to gain the needed knowledge and skills required to become such a genius.</td>
+                <td class="p-2">Rare</td>
+              </tr>
+              <tr>
+                <td class="p-2">Kineticist</td>
+                <td class="p-2">Every piece of nature contains a part of celestial energy when they were created by The Artisan. You can call upon that celestial essence that resides within the elements.</td>
+                <td class="p-2">common</td>
+              </tr>
+              <tr>
+                <td class="p-2">Oracle</td>
+                <td class="p-2">Celestial essence is not something static it has state. It flows all throughout the world and you try to interpreted the information they carry.</td>
+                <td class="p-2">uncommon</td>
+              </tr>
+              <tr>
+                <td class="p-2">Sorcerer</td>
+                <td class="p-2">You attract Celestial essence like a magnet. It is a part of you and has given you magical powers.</td>
+                <td class="p-2">uncommon</td>
+              </tr>
+              <tr>
+                <td class="p-2">Thaumaturge</td>
+                <td class="p-2">The celestial essence that resides in anything is full of information. In your life you have spend many hours to be able to read what is contained within them and now you are able to see their weaknesses and vulnerabilities</td>
+                <td class="p-2">uncommon</td>
+              </tr>
+              <tr>
+                <td class="p-2">Witch</td>
+                <td class="p-2">The Celestial forces of this world have a certain control over you. Only time will tell if they are leading you to glory or ruin.</td>
+                <td class="p-2">common</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="other-block" class="w-100">
+          <div class="card-header rounded-0 border-0 bg-pf-subtle mb-2">
+            <h3>Other stuff</h3>
+          </div>
+          <div class="card-text">
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub">
+              <h4>Languages</h4>
+            </div>
+            <p class="m-3">
+              In the Sealed World the most commonly spoken language is common.
+              Other languages are slowly going extinct with people moving to bigger cities and forgetting their roots.
+              Smaller more isolated communities still speak the tongue of their ancestors, but they are fighting a losing war for the most part.
+            </p>
+            <div class="card-header mb-2 rounded-0 border-0 bg-pf-sub">
+              <h4>Religion</h4>
+            </div>
+            <p class="m-3">
+              Religion sits at a weird spot within the Sealed World. The world only acknowledges the one god that matters, The Artisan, but he is not the only one that is worshipped.
+              A big part is that in this world almost everything contains a form of Celestial essence and religions can worship anything that has a big amount of celestial power.
+              Who the worshipping does and how this worshipping is done differs greatly per community/following.
+              To name a few things that could fall into the category of god are:
+            </p>
+            <ul class="mx-3">
+              <li>The Artisan, the opper-god. Worshipping him probably means you want to do good to the world and his followers often gain abilities that involve creating things, infusing Celestial power in things </li>
+              <li>The jailers, heroes created with a domain. If you follow one of the Jailers you probably have a connection with the "domain" they get there power from.</li>
+              <li>Big celestial fragments. Not all fragments are bad. Some give powers to those who need them or help immensely with the daily struggles of their followers. </li>
+              <li>Something else. Maybe you have idea for something else? If so I'm interested in seeing how we can make it work</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    }
+  </div>
+  <!---------------------------------------------------------------->
+  <div class="card mb-3 border-0 bg-pf-card-bg">
+    <div class="card-header mb-2 bg-pf user-select-none" (click)="openWorld=!openWorld">
+      <h2 class="card-title">The world</h2>
+    </div>
+    @if (openWorld){
+      <div class="card-body px-0 ">
+        <div id="regions-block" class="w-100">
+          <div class="card-header rounded-0 border-0 bg-pf-subtle">
+            <h3>regions</h3>
+          </div>
+          <div class="card-text m-3">
+            <p>
+              There are a multitude of regions with the setting of the campaign.
+              To quickly explain it: Think of Europe shaped like Japan.
+              There is a lot of diversity in the flora and fauna, but more tropical areas are not on this continent.
+            </p>
+          </div>
+        </div>
+
+        <div id="cities-block" class="w-100">
+          <div class="card-header rounded-0 border-0 bg-pf-subtle">
+            <h3>Cities</h3>
+          </div>
+          <p class="m-3">A small overview of the 3 biggest cities in the land and explaining what fragmented communities are.</p>
+          <div class="card-text">
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub">
+              <h4>Fineria - the capital</h4>
+            </div>
+            <p class="m-3">
+              It might not be the oldest or the biggest city, but no other city in the country becomes even close to it's importance.
+              *Arrival square* is the exact location where the Jailers returned after sealing all the mad gods.
+              They were welcomed by no more than the visitor of a small tavern, called "The Pond".
+              It didn't take long for people to travel from all over, hoping to bring gifts to thank the ones that fought for them.
+              Later when the celestial fragments started to appear The Artisan gifted the, a by then a small city a "Forge".
+              The biggest one to date. More and more people travelled to Finaria for work, commerce or religious believes.
+              Several holidays started here to celebrate the gifts and generosity of the Artisan.
+              The most famous one is *Smelting day* in which The Artisan visits the mortal world and smelts the fragments collected over the last year and forges them into powerful artefacts to those who contributed the most to dealing with the mad gods.
+            </p>
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub-sub">
+              <h5>The forge</h5>
+            </div>
+            <p class="m-3">
+              The Forge is a big beam of light that is located in the north east of the city given by The Artisan in 42 A.S. (After Sealing).
+              Its length is from the stars to the centre of the planet.
+              It became a real hot spot figuratively and objectively.
+              Merchants gathered around it buying any celestial shards they could get their hands on from fragments hunters, just so they could sell the experience of throwing a shard into the blazing heat of the Forge.
+              Shards weren't the only thing thrown in there.
+              People threw all kinds of objects in there curious to see what would happen.
+              God-touched people would be captured and meet their maker as were they burned alive.
+              Times changed when the Hunters Guild was established as a ceremonial master for *Smelting day*.
+              A wall was build around the Forge and only shards were allowed to be thrown in the Forge.
+              Throwing in living creatures was banned from that point onward as it was seen as needlessly cruel.
+            </p>
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub-sub">
+              <h5>Smelting Day</h5>
+            </div>
+            <p class="m-3">
+              No other day gets as much attention as Smelting day.
+              It's a celebration for everyone.
+              The Artisan arrives at sunrise and only leaves when the last sun ray has disappeared from sight.
+              In the morning there are a lot of parades showing all the heroic deeds people have done during the year.
+              During midday a big event is held to see who is chosen to be called up and receive their gift from The Artisan at the end of it.
+              After all that the tap is turned open all the way and there will be danced til deep in to the night.
+            </p>
+
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub-sub">
+              <h5>The Hunters guild</h5>
+            </div>
+            <p class="m-3">
+              Created in 56 A.S. ~700 years ago.
+              the Hunters Guild took it upon itself to rid the world of anything mad god related thing.
+              They started mapping out all the celestial fragments and disposing of them.
+              Parties are send out to inspect the damage, asses it's threat level and destroy it in a careful manner.
+              <br><br>
+              When more and more mortals started to become god-touched they expanded their operations to hunting them as well and they are very different from their counterpart.
+              Some prefer travelling and bring turn in any god-touched they find.
+              Others look for hard to find targets so that they can claim the big bounty put on the targets head by the hunters guild.
+              Most of them are of the opinion that hunting alone makes the job a lot easier and enjoy the solitude.
+            </p>
+          </div>
+
+          <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub-sub">
+            <h5>Arrival Square</h5>
+          </div>
+          <p class="m-3">
+            Arrival square is not just some square.
+            It's the place where Jailers returned when sealing the mad gods leaving a crater with the diameter of 6 km (little bit bigger than central park).
+            Pilgrimages were made to see this holy site.
+            Seeing only a giant crater was a big disappointment.
+            That's why people came together and decorated the area with 10 meter (32 foot) tall statues for every hero in a heroic pose that came back and those who had fallen, nice gardens with all their favourite flowers and smaller spots where newer generations about what these heroes had done for them.
+          </p>
+
+          <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub-sub">
+            <h5>The crystal order</h5>
+          </div>
+          <p class="m-3">
+            The crystal order has a long history.
+            They seek to help those who have been struck by the unfortunate fate of being god-touched.
+            When there were still mortals being sacrificed to the Forge they fought toe and nail to safe any they could.
+            In modern days they are more focused on finding methods returning people back to normal.
+            With their "headquarters" here in Fineria they also feel responsible to help those in need and provide for them.
+          </p>
+
+          <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub">
+            <h4>Clavisan - History documented</h4>
+          </div>
+          <p class="m-3">
+            Nothing happens without the Great Clavisian Library knowing about it.
+            It's the great centre piece of the city. People often say that the Artisan created the world, but the library created its history.
+            Anything that exists in the city is to help the the library grow its enormous collection.
+            Whether more ink and paper need to be produced, knowledge need to be gathered from a recent event or documents need to be fact check.
+            The amount of knowledge that is contained within the walls of library is a big factor for many people.
+            Scholars have set up their research facilities, merchants are looking to sell their experiences for a high price, and a lot of performers are looking for ways here to make their stories feel even more alive.
+          </p>
+
+          <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub-sub">
+            <h5>The great Clavisian library</h5>
+          </div>
+          <p class="m-3">
+            The Artisan is not perfect and is world is the same.
+            Over the thousands of years he made changes, corrections, improvements to every aspect of the world and the first librarians, consisting of a group of studious mortals, took it upon themselves to document every possible detail they could find and so the library was born.
+            Dating back to 3000 years B.S. (before the last sealing).
+            The library employs all kinds of people from scribes who spend their days transferring documents different languages to journalist who travel the world to document all the things they come across on their journey.
+          </p>
+
+          <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub-sub">
+            <h5>The Amphitheatre</h5>
+          </div>
+          <p class="m-3">
+            In the southern districts a lot of entertainment is brought to the people in all sorts of ways.
+            One of the most popular ways to experience historic plays is in the amphitheatre, a new addition that is not even a 100 years old.
+            It's size and affordability makes it very easy to join one of the many plays that transpired before the Sealed Age.
+          </p>
+
+          <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub-sub">
+            <h5>Magical universities</h5>
+          </div>
+          <p class="m-3">
+            With the unlimited amount of knowledge in the center of the city it is no wonder that a lot of scholars were attracted to the city.
+            Throughout the northern part of the city multiple universities can be found.
+            Most of them like to focus on a specific kind of magic and the possibilities that is contained within it properties.
+            Many tourneys are held in the summer season to prove that their school has the brightest students with the most powerful spells.
+            These tourneys are almost as spectacular as the plays held in the southern part of Clavisan.
+          </p>
+
+          <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub">
+            <h4>Obliën - God-touched prison (city)</h4>
+          </div>
+          <p class="m-3">
+            Obliën is a prison city.
+            Housing every god-touched mortal to rot til death or worse.
+            Not much is known of what is exactly going on in there.
+            You'd better stay away if you don't need to be there.
+            <br><br>
+            Even before it became a walled off fortress it was a gang invested town not run by law, but by money.
+            Loyalty could be bought on the cheap.
+            A big shift in the power structure was caused by the ruling lord when he decided to build a big wall around the city in 71 A.S..
+            Many gangs chose to leave the city to not be trapped in a mouse trap.
+            Production in the mines slowed down due to the lack of manpower and a deal was struck with the hunters guild (and other parties).
+            God-touched mortals would be send to Obliën to work in turn for keeping them confined within the walls.
+            And as more and more god-touched mortals were brought in the lawless town grew into a lawless city.
+          </p>
+
+          <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub-sub">
+            <h5>Rumors</h5>
+          </div>
+          <ul class="m-3">
+            <li>The lord is experimenting on god-touched to create his own celestial weapons</li>
+            <li>The lord is a mad god that was able to hide from the Jailers and is looking for revenge on The Artisan</li>
+            <li>The lord creates tournaments for god-touched in compete for a ticked to freedom.</li>
+          </ul>
+
+          <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub">
+            <h4>Fragmented communities</h4>
+          </div>
+          <p class="m-3">
+            Not all communities see the celestial fragments as a source of evil that needs to be destroyed as all cost.
+            In some areas the celestial fragments provide for the local communities and they use its powers to better their lives.
+            In the far north of the land there is enormous celestial crystal that makes a part of the "arctic" landscape liveable by warming it up to a spring temperature.
+            In another region there is a fragment that gives people the ability of flight, so they can traverse faster through the mountains.
+            <br><br>
+            The hunters guild and these communities often clash and rarely see eye to eye.
+            Inhabitants will fight back with every cell in there body.
+            It is not their (the hunters guild) land and they do not decide on what is being done on it.
+            It is often a reason why god-touched mortals seek out fragmented communities and try to live with them.
+            They may not accept god-touched, but they tolerate them enough that no one will sell them out to the guild.
+          </p>
+        </div>
+
+        <div id="Factions-block" class="w-100">
+          <div class="card-header rounded-0 border-0 bg-pf-subtle mb-3">
+            <h3>Groups</h3>
+          </div>
+          <div class="card-tex">
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub">
+              <h4>The Hunters Guild (explorers)</h4>
+            </div>
+            <p class="m-3">
+              The hunters guild is split in two parts.
+              The celestial branch of the organization focus on locating, researching and destroying celestial fragments that are scattered over the land.
+              Operations start with scouts travelling to find not yet before seen fragments.
+              When one is found they assess whether how much power the fragment has and whether they can dispose of it themselves.
+              If that is the case they have special equipment that will suck out the celestial essence from, leaving only a shiny rock.
+              From there it can easily be crushed with a pickax.
+              Larger stones are reported back to the main guild house in Fineria.
+              Based on the threat level expeditions are send out that.
+              Specialized equipment created with the help of The Artisan guarantees that none of the celestial essence does not take root when it is extracted from the fragment.
+              After that it can be broken down the same way smaller stones are.
+              The large Celestial fragments often have changed the life styles of the communities that live around it.
+              The guild has special trained teams that help these communities recover and help them find solutions to problems that in the past were solved by the gifts from the celestial fragments.
+            </p>
+
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub">
+              <h4>The Hunters Guild (mercenaries)</h4>
+            </div>
+            <p class="m-3">
+              The other part of the Hunters Guild is the department of god-touched hunters.
+              If you come across a Hunters Guild establishment in any other city than Fineria it most likely focuses on the hunting side of the guild.
+              Members that are part of it are mercenaries who roam the lands looking for the head with the biggest bounty.
+              Guild buildings have this big board inside with every god-touched person on there.
+              People who have been seen in the area do get posted on the local board and give a small bonus based on how much gold the establishment has on hand.
+              Smart hunters choose to group up when they are in this city for this exact reason.
+              Two are stronger then one and you can cover more ground if you know the god-touched rat might be lingering in town for just a little to long.
+              For bounties that have less information the hunters prefer to work alone.
+              That way it's easier to look for leads and not scare your mark away.
+            </p>
+
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub">
+              <h4>The splinter guard</h4>
+            </div>
+            <p class="m-3">
+              Members of the splinter guard can be found in almost every city.
+              Where the hunters guild is proactive in catching god-touched.
+              The splinter guard takes a more reactive approach.
+              Acting as the main law enforcing body within the world and besides dealing with more normal crimes they also guard cities against any god-touched that want to enter a city or town.
+              Preferring to detain them and have hunters deal with them as many awakened god-touched easily overpower their limited forces that would have to transport them.
+              Military force to protect the citizens that live within a city or town.
+            </p>
+
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub">
+              <h4>The crystal order</h4>
+            </div>
+            <p class="m-3">
+              The oldest building of the Crystal Order stands in Fineria and was most relevant when people were still thrown into the Forge.
+              Their main reason for existing was to help those who had been god-touched.
+              Being chosen as an "lawyer" for the mad gods was not a choice, but a curse and they have always focused on helping those break the chains of that unfortunate fate.
+              They do not agree with methods chosen by the guild or the laws of Obliën, but at least it is an improvement over the older methods.
+              Until they have a permanent cure for curing the god-touched there is not much ammo in their barrel to fight against the world to give those who got cursed a chance at returning to their normal life.
+              In places where the order has a bigger presence they try to provide for other unfortunate people as well by providing meals and shelter.
+            </p>
+          </div>
+        </div>
+
+        <div id="Celebrities-block" class="w-100">
+          <div class="card-header rounded-0 border-0 mb-3 bg-pf-subtle">
+            <h3>Celebrities</h3>
+          </div>
+          <div class="card-text">
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub">
+              <h4>The Artisan</h4>
+            </div>
+            <p class="m-3">
+              The Artisan is the one and only god within the world of Diamath.
+              He created this world some 4000 years B.S. (before the last sealing) and visited the land frequently to interact with the lifeforms.
+              Listening to their problems, their wishes and their hopes.
+              Mortals held him high regard and loved him unconditionally.
+              When people started to gain their godly powers he welcomed them into his home of the celestial plain.
+              Worshipping reached an all-time high in the hopes that they would become god-touched (it was seen as a blessing in that time period), but around 500 B.S. the amount of worshipping hit rock bottom when the first gods started going mad.
+              The Artisan was quick to act and rushed to the aid of the mortals with creating The Jailers that had god-killing powers till non of them were left.
+              A few gods had gotten to strong and defeating them was more than a monumental task, so he imprisoned them to let there power fade away over time.
+              In modern time he spends almost all of his time as a warden. Only coming to the land on special occasions like Smelting day (info under Fineria).
+            </p>
+
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub">
+              <h4>The jailers</h4>
+            </div>
+            <p class="m-3">
+              Created by The Artisan to combat the mad gods gained them a lot of popularity really quickly.
+              How they actually came into being, how many there were and where they went after the sealing is not very well known.
+              The general stories goes is that most of them were created from clay by The Artisan and had no mortal life.
+              On a more personal level the opinion are influenced by their own experiencing of meeting one of the jailers or hearing about someone meeting them second-hand.
+              The seven (number subject to change until campaign start) jailers have their statues on Arrival square in Fineria and are quite the celebrities.
+              After the battle was done they all went their own way and do various jobs.
+            </p>
+
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub-sub">
+              <h5>Nikolash, The Light</h5>
+            </div>
+            <p class="m-3">
+              He is the typical heroic character that will fight to defeat evil and would never harm an innocent creature.
+              His morals are as strong as his hulking muscles.
+              He can often be seen in Fineria walking around enjoying being a VIP.
+              When he is not flaunting his outstanding physique he spends time at the Hunters guild preparing for the expeditions.
+              While he agrees with the opinion that god-touched need to be eliminated, he also sees the irony of it and prefers to stay out of that kind of business.
+            </p>
+
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub-sub">
+              <h5>Isoc, The Magican</h5>
+            </div>
+            <p class="m-3">
+              A jack of all trades, master of all.
+              When it comes to magic at least.
+              His gift let him use all schools of magic and he still believes there is more to find out about it.
+              While he is seen as a honoured guest at any university he visits it does not interest him much.
+              The spells the students come up with is what it is all about.
+              Their minds can see things the masters had discarded as not worth thinking about.
+            </p>
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub-sub">
+              <h5>Thressil, The Flower</h5>
+            </div>
+            <p class="m-3">
+              Shortly after the Arrival she traded her life in the city for a life far away from it.
+              As far as she could get away from it. She wants to be around her plants.
+              See them grow beautiful flowers, spread their pollen across the land, produce the juiciest fruits, gain medicinal properties when sickness is taking over the land.
+              Nature provides everything one could need.
+              People often will look for her when someone close to them has been god-touched or terminally ill in the hopes that she might be able to cure them.
+            </p>
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub-sub">
+              <h5>MariKill, The Lover</h5>
+            </div>
+            <p class="m-3">
+              Marikill stands for all love.
+              Not just the romantic love.
+              Whether its love between a parent and child, two good friends, or the love for oneself.
+              She will give you the love that you need.
+              Anyone who has a chance to visit Clavisan has a hard time missing her.
+              Every night she will fill her theatre with spectators wanting a glimpse of her.
+              Tempting everyone with her gracious movement and silky voice. A must see if you are there.
+            </p>
+
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub-sub">
+              <h5>Kell, The Reaper</h5>
+            </div>
+            <p class="m-3">
+              People have seen him roam the lands.
+              Why? No one is sure.
+              He does not speak.
+              The only sounds he makes are soft mumbles that are incomprehensible.
+              Stories say that he lost part of his soul in the last battle against the mad god or lost a precious loved one before becoming a hero and is now looking for them.
+              His powers often strike fear in those who had not been informed about his arrival.
+              A trail of withered nature follows him before turning back to life again when Kell gets far enough from the place.
+            </p>
+
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub-sub">
+              <h5>Lautriël, The Eye</h5>
+            </div>
+            <p class="m-3">
+              She definitely returned with the other jailers, but not many people have seen her since.
+              On the occasion that she did show herself it was to provide evidence to cases where someone was almost sentenced for a crime they did not commit and she is often seen as the guardian angel to those who are framed.
+              Saving them from a fate that did not belong to them.
+              Her sense of justice is just as great as that of Nicolash, but in every other way they are complete opposites.
+            </p>
+
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub">
+              <h4>The council</h4>
+            </div>
+            <p class="m-3">
+              Council members that will observe the world on instructions of The Artisan.
+              They are to report to The Artisan when he visits Diamath.
+              Reports might result in the climate changes in some regions to make it more in habitable, Supplying inhabitants with a better harvest after being stuck by a natural disaster out of their control or giving power to oppressed groups so they can fight back against the aggressors.
+            </p>
+
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub-sub">
+              <h5>Dillham</h5>
+            </div>
+            <p class="m-3">
+              He was one of the Jailers at one point.
+              When the council was created he stepped forward as one its first members.
+              His godly powers were stripped from him by choice.
+              "A man who chooses to be above his people will never know their struggles" were his famous world he said on top of the altar when he got appointed.
+              Overall the people have a positive opinion of him. His daily activities are mostly as a law maker in Finery.
+              It's where he is most comfortable and it's the easiest teach the newer generations.
+            </p>
+
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub-sub">
+              <h5>Cecelik</h5>
+            </div>
+            <p class="m-3">
+              Cecelik is not a people person.
+              He likes to travel and look for the creatures big and small.
+              Listen to what they have to tell him.
+              People can often be selfish without any consideration for the things around them.
+              Changes that he pushes for during the meetings with The Artisan put the animals first.
+              Making sure that the habitats do not get destroyed, food is plenty and all species can evolve to their perfect form.
+              He is an animal friend, but is very well aware that food chain exist and has a purpose within this world.
+            </p>
+
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub-sub">
+              <h5>Vimi</h5>
+            </div>
+            <p class="m-3">
+              Once she was part of the group they called The Jailers and seen as a hero.
+              Now she is locked behind the walls of Obliën.
+              When the council was constructed she forced herself in and wanted to be the one who looked over Finaria.
+              Dilham and her clashed on every occasion when they were in the same room.
+              On suggestion of The Artisan she moved her business to Obliën where her powers were needed and could be explained as being necessary for surviving the city.
+              She was not happy with the move, but at least she would be able to keep her skills sharp for the day when the mad gods might break free.
+              No one can be imprisoned forever.
+            </p>
+
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub-sub">
+              <h5>Quibs</h5>
+            </div>
+            <p class="m-3">
+              An unlikely candidate was brought forth by the communities of goblins.
+              Goblins are widely spread around the land and have their own tribes where they like to stay.
+              Afraid that no-one in the council would care about the territories they shoved Quibs to the front.
+              He wasn't sure what to do at first in his new role as council member, but has since found a new home between the universities in Clavisan.
+              There he follows every development that involves fires.
+              How you can make them bigger, how you can make them more sparkly, how you can create them in all kinds of colours.
+            </p>
+
+            <div class="card-header mb-3 rounded-0 border-0 bg-pf-sub-sub">
+              <h5>Tinkle</h5>
+            </div>
+            <p class="m-3">
+              Tinkle is a happy little fellow.
+              With magic to spare he works closely with the Hunters guild to measure the level of celestial energy that is present across the land.
+              He can be here.
+              He can be there.
+              He can be anywhere.
+              His trademark teleportation magic makes it very easy to travel across Diamath.
+              Or maybe it isn't teleportation magic.
+              It could also be duplication magic and have multiple versions of him walking around.
+              Seeing him have different personalities each time doesn't make it easier.
+            </p>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+
+
+</div>
